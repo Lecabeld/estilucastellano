@@ -6,6 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link
+  rel="preload"
+  as="image"
+  href="assets/images/hero/hero-pergamino-xl.webp"
+  imagesrcset="
+    assets/images/hero/hero-pergamino-sm.webp 640w,
+    assets/images/hero/hero-pergamino-md.webp 1024w,
+    assets/images/hero/hero-pergamino-xl.webp 1920w
+  "
+  imagesizes="100vw"
+  />
+
 </head>
 <body>
 
@@ -23,6 +35,44 @@
       <a href="#blog">Blog</a>
       <a href="#contacto">Contacto</a>
     </nav>
+
+    <!-- HERO PRINCIPAL -->
+  <section class="hero" aria-label="Hero Estilu Castellano">
+    <picture>
+      <!-- Mobile -->
+      <source
+        media="(max-width: 640px)"
+        srcset="assets/images/hero/hero-pergamino-sm.webp"
+      />
+
+      <!-- Tablet -->
+      <source
+        media="(max-width: 1024px)"
+        srcset="assets/images/hero/hero-pergamino-md.webp"
+      />
+
+      <!-- Desktop -->
+      <img
+        src="assets/images/hero/hero-pergamino-xl.webp"
+        alt="Pergamino educativo Estilu Castellano"
+        class="hero-bg"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </picture>
+
+    <div class="hero-content">
+      <h1>Aprende y mejora tu castellano</h1>
+      <p>Educación lingüística clara, moderna y accesible.</p>
+
+      <div class="hero-actions">
+        <a href="#estilu-dia" class="btn btn-primary">Estilu del día</a>
+        <a href="#servicios" class="btn btn-outline">Comenzar ahora</a>
+      </div>
+    </div>
+  </section>
+
 
     <button class="btn-login">Acceso</button>
   </div>
