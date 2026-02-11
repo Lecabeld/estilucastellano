@@ -1,3 +1,16 @@
+
+/* =========================
+   CORE
+========================= */
+@import "typography.css";
+@import "spacing.css";
+@import "components.css";
+
+/* =========================
+   SECTIONS
+========================= */
+@import "sections/hero.css";
+
 /* ================= RESET ================= */
 * {
   margin: 0;
@@ -61,199 +74,9 @@ body {
   font-weight: 600;
 }
 
-/* ================= HERO ================= */
-.hero {
-  height: 100vh;
-  background: url("../images/fondo-pergamino.webp") center / cover no-repeat;
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(40, 30, 20, 0.45);
-}
-
-.hero-content {
-  position: relative;
-  max-width: 700px;
-  color: #f9f6f1;
-}
-
-.hero h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 16px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 28px;
-  opacity: 0.95;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn-primary,
-.btn-secondary {
-  padding: 12px 26px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.btn-primary {
-  background: #c8a46c;
-  color: #2c2c2c;
-}
-
-.btn-secondary {
-  border: 2px solid #f2ede3;
-  color: #f2ede3;
-}
-
-.btn-primary:hover,
-.btn-secondary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-
-/* ================= ANIMACIONES ================= */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1.2s ease forwards;
-  animation-delay: 0.3s;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   .menu {
     display: none;
-  }
-}
-
-/* =========================
-   HERO PRO
-========================= */
-
-.hero {
-  position: relative;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  background: #f7f3ea;
-}
-
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.45),
-    rgba(0, 0, 0, 0.65)
-  );
-  z-index: 2;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 3;
-  max-width: 1100px;
-  padding: 0 1.5rem;
-  text-align: center;
-  color: #fff;
-  animation: heroFade 1s ease-out both;
-}
-
-.hero h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
-  line-height: 1.15;
-}
-
-.hero p {
-  margin-top: 1rem;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  opacity: 0.95;
-}
-
-.hero-actions {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-/* BOTONES */
-.btn {
-  padding: 0.75rem 1.6rem;
-  border-radius: 999px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-primary {
-  background: #c79a2d;
-  color: #1b1b1b;
-}
-
-.btn-outline {
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-/* ANIMACIÓN */
-@keyframes heroFade {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* MOBILE AJUSTES */
-@media (max-width: 640px) {
-  .hero {
-    min-height: 90vh;
   }
 }
