@@ -5,93 +5,83 @@
   <title>Estilu Castellano</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link
-  rel="preload"
-  as="image"
-  href="assets/images/hero/hero-pergamino-xl.webp"
-  imagesrcset="
-    assets/images/hero/hero-pergamino-sm.webp 640w,
-    assets/images/hero/hero-pergamino-md.webp 1024w,
-    assets/images/hero/hero-pergamino-xl.webp 1920w
-  "
-  imagesizes="100vw"
-  />
+  <!-- ================= CSS PRO ================= -->
+  <link rel="stylesheet" href="assets/css/spacing.css" />
+  <link rel="stylesheet" href="assets/css/typography.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/sections/hero.css" />
 
+  <!-- ================= HERO IMAGE PRELOAD ================= -->
+  <link
+    rel="preload"
+    as="image"
+    href="assets/images/hero/hero-pergamino-xl.webp"
+    imagesrcset="
+      assets/images/hero/hero-pergamino-sm.webp 640w,
+      assets/images/hero/hero-pergamino-md.webp 1024w,
+      assets/images/hero/hero-pergamino-xl.webp 1920w
+    "
+    imagesizes="100vw"
+  />
 </head>
+
 <body>
 
 <!-- ================= HEADER / NAVBAR ================= -->
 <header class="navbar">
   <div class="navbar-container">
     <a href="#inicio" class="logo">
-      <img src="assets/images/logo-estilu.webp" alt="Estilu Castellano" />
+      <img
+        src="assets/images/logo-estilu.webp"
+        alt="Estilu Castellano"
+        loading="lazy"
+      />
     </a>
 
-    <nav class="menu">
+    <nav class="menu" aria-label="Navegación principal">
       <a href="#inicio">Inicio</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#servicios">Servicios</a>
+      <a href="/gramatica/" class="nav-locked">Gramática</a>
       <a href="#blog">Blog</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <!-- HERO PRINCIPAL -->
-  <section class="hero" aria-label="Hero Estilu Castellano">
-    <picture>
-      <!-- Mobile -->
-      <source
-        media="(max-width: 640px)"
-        srcset="assets/images/hero/hero-pergamino-sm.webp"
-      />
-
-      <!-- Tablet -->
-      <source
-        media="(max-width: 1024px)"
-        srcset="assets/images/hero/hero-pergamino-md.webp"
-      />
-
-      <!-- Desktop -->
-      <img
-        src="assets/images/hero/hero-pergamino-xl.webp"
-        alt="Pergamino educativo Estilu Castellano"
-        class="hero-bg"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="high"
-      />
-    </picture>
-
-    <div class="hero-content">
-      <h1>Aprende y mejora tu castellano</h1>
-      <p>Educación lingüística clara, moderna y accesible.</p>
-
-      <div class="hero-actions">
-        <a href="#estilu-dia" class="btn btn-primary">Estilu del día</a>
-        <a href="#servicios" class="btn btn-outline">Comenzar ahora</a>
-      </div>
-    </div>
-  </section>
-
-
-    <button class="btn-login">Acceso</button>
+    <a href="#acceso" class="btn btn-outline">Acceso</a>
   </div>
 </header>
 
 <!-- ================= HERO ================= -->
-<section id="inicio" class="hero">
-  <div class="hero-overlay"></div>
+<section class="hero" id="inicio" aria-label="Hero Estilu Castellano">
+  <picture>
+    <source
+      media="(max-width: 640px)"
+      srcset="assets/images/hero/hero-pergamino-sm.webp"
+    />
+    <source
+      media="(max-width: 1024px)"
+      srcset="assets/images/hero/hero-pergamino-md.webp"
+    />
+    <img
+      src="assets/images/hero/hero-pergamino-xl.webp"
+      alt="Pergamino educativo Estilu Castellano"
+      class="hero-bg"
+      fetchpriority="high"
+      decoding="async"
+    />
+  </picture>
 
-  <div class="hero-content fade-in">
+  <div class="hero-content">
     <h1>Aprende y mejora tu castellano</h1>
-    <p>Una palabra, un estilo, cada día.</p>
+    <p>Educación lingüística clara, moderna y accesible.</p>
 
-    <div class="hero-buttons">
-      <a href="#estilu-dia" class="btn-primary">Ver Estilu del día</a>
-      <a href="#servicios" class="btn-secondary">Comenzar ahora</a>
+    <div class="hero-actions">
+      <a href="#estilu-dia" class="btn btn-primary">Estilu del día</a>
+      <a href="#servicios" class="btn btn-outline">Comenzar ahora</a>
     </div>
   </div>
 </section>
+
 
 <script src="assets/js/main.js"></script>
 </body>
