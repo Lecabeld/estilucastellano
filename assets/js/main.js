@@ -1,38 +1,23 @@
-// Navbar efecto al scroll (opcional PRO)
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar");
-  navbar.style.background =
-    window.scrollY > 60
-      ? "rgba(30,25,20,0.95)"
-      : "rgba(30,25,20,0.85)";
-});
+/* ===================================================
+   ESTILU CASTELLANO – MAIN JS PRO
+=================================================== */
 
-// HERO: mejora percepción de carga
 document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar");
   const hero = document.querySelector(".hero");
+
+  /* ================= NAVBAR SCROLL ================= */
+  if (navbar) {
+    const handleScroll = () => {
+      navbar.classList.toggle("is-scrolled", window.scrollY > 60);
+    };
+
+    handleScroll(); // estado inicial
+    window.addEventListener("scroll", handleScroll);
+  }
+
+  /* ================= HERO LOAD ================= */
   if (hero) {
     hero.classList.add("is-loaded");
   }
-});
-
-/* =========================
-   UI GLOBAL
-========================= */
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", () => {
-  if (!navbar) return;
-
-  navbar.style.background =
-    window.scrollY > 60
-      ? "rgba(30,25,20,0.95)"
-      : "rgba(30,25,20,0.85)";
-});
-
-/* =========================
-   HERO
-========================= */
-document.addEventListener("DOMContentLoaded", () => {
-  const hero = document.querySelector(".hero");
-  hero?.classList.add("is-loaded");
 });

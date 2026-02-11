@@ -1,0 +1,45 @@
+/* ===================================================
+   ESTILU CASTELLANO – TYPOGRAPHY SYSTEM
+=================================================== */
+
+:root {
+  font-size: 16px;
+
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Escala tipográfica fluida */
+  --fs-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
+  --fs-md: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.8vw, 1.5rem);
+  --fs-xl: clamp(1.75rem, 1.4rem + 1.5vw, 2.25rem);
+  --fs-xxl: clamp(2.25rem, 1.8rem + 2.5vw, 3rem);
+}
+
+/* Base tipográfica */
+body {
+  font-family: var(--font-main);
+  font-size: var(--fs-md);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: var(--fs-xxl);
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: var(--fs-xl);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: var(--fs-lg);
+}
+
+p {
+  font-size: var(--fs-md);
+}
+
+small {
+  font-size: var(--fs-sm);
+}
