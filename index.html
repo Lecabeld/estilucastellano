@@ -7,7 +7,7 @@
 
   <!-- ================= CSS PRO ================= -->
   <link rel="stylesheet" href="assets/css/spacing.css" />
-  <link rel="stylesheet" href="assets/css/typography.css" />
+  <link rel="stylesheet" href="assets/css/typography.pro.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/sections/hero.css" />
 
@@ -27,65 +27,49 @@
 
 <body>
 
-<!-- ================= HEADER / NAVBAR ================= -->
-<header class="navbar">
-  <div class="navbar-container">
-    <a href="#inicio" class="logo">
-      <img
-        src="assets/images/logo-estilu.webp"
-        alt="Estilu Castellano"
-        loading="lazy"
-      />
-    </a>
-
-    <nav class="menu" aria-label="Navegación principal">
-      <a href="#inicio">Inicio</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#servicios">Servicios</a>
-
-      <a href="/gramatica/" class="is-locked">
-        Gramática <span aria-hidden="true">🔒</span>
+<!-- =========================
+     NAVBAR PRO
+========================= -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="assets/images/ui/logo-estilu.svg" alt="Estilu Castellano Logo">
       </a>
 
-      <a href="#blog">Blog</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+      <!-- Menú principal -->
+      <div class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#blog">Blog</a>
 
+        <!-- Link gated -->
+        <a href="pages/gramatica/index.html" class="is-locked">
+          Gramática <span>🔒</span>
+        </a>
 
-    <a href="#acceso" class="btn btn-outline">Acceso</a>
-  </div>
-</header>
-
-<!-- ================= HERO ================= -->
-<section class="hero" id="inicio" aria-label="Hero Estilu Castellano">
-  <picture>
-    <source
-      media="(max-width: 640px)"
-      srcset="assets/images/hero/hero-pergamino-sm.webp"
-    />
-    <source
-      media="(max-width: 1024px)"
-      srcset="assets/images/hero/hero-pergamino-md.webp"
-    />
-    <img
-      src="assets/images/hero/hero-pergamino-xl.webp"
-      alt="Pergamino educativo Estilu Castellano"
-      class="hero-bg"
-      fetchpriority="high"
-      decoding="async"
-    />
-  </picture>
-
-  <div class="hero-content">
-    <h1>Aprende y mejora tu castellano</h1>
-    <p>Educación lingüística clara, moderna y accesible.</p>
-
-    <div class="hero-actions">
-      <a href="#estilu-dia" class="btn btn-primary">Estilu del día</a>
-      <a href="#servicios" class="btn btn-outline">Comenzar ahora</a>
+        <!-- Botón contacto -->
+        <a href="#contacto" class="btn-login">Contacto</a>
+      </div>
     </div>
-  </div>
-</section>
+  </nav>
+
+  <!-- =========================
+      HERO SECTION
+  ========================= -->
+  <section class="hero">
+    <img src="assets/images/hero/hero-pergamino-xl.webp" alt="Fondo Hero" class="hero-bg">
+    <div class="hero-content">
+      <h1>Bienvenidu a Estilu Castellano</h1>
+      <p>Aprende gramática y más con nuestro contenido profesional y modular.</p>
+      <div class="hero-actions">
+        <a href="#servicios" class="btn btn-primary">Comenzar</a>
+        <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
 
 
 <script src="assets/js/main.js"></script>

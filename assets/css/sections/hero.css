@@ -31,30 +31,89 @@
   z-index: 2;
 }
 
+/* ================= HERO-CONTENT PRO ================= */
 .hero-content {
   position: relative;
   z-index: 3;
-  max-width: 68rem;
-  padding-inline: var(--space-l);
+  max-width: 68.75rem; /* 1100px */
+  padding-inline: var(--space-4);
   text-align: center;
-  color: #fff;
+  color: #ffffff;
+  animation: heroFade 1s ease-out both;
 }
 
-.hero h1 {
-  font-size: var(--step-4);
-  line-height: 1.15;
+/* H1 gigante fluido */
+.hero-content h1 {
+  font-size: clamp(3rem, 5vw + 2rem, 5rem); /* más grande y fluido */
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: var(--space-5); /* separación con párrafo */
 }
 
-.hero p {
-  margin-top: var(--space-s);
-  font-size: var(--step-1);
+/* Párrafo separado y legible */
+.hero-content p {
+  font-size: var(--fs-lg);
+  line-height: 1.6;
+  margin-bottom: var(--space-6); /* separación con botones */
   opacity: 0.95;
 }
 
+/* Contenedor de botones con spacing uniforme */
 .hero-actions {
-  margin-top: var(--space-m);
   display: flex;
   justify-content: center;
-  gap: var(--space-s);
+  gap: var(--space-4); /* separación horizontal entre botones */
   flex-wrap: wrap;
 }
+
+/* Botones (ya definidos en components.css, solo reafirmamos) */
+.hero-actions .btn {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--fs-sm);
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-actions .btn-primary {
+  background: #c8a46c;
+  color: #2c2c2c;
+}
+
+.hero-actions .btn-outline {
+  border: 0.125rem solid #f2ede3;
+  color: #f2ede3;
+  background: transparent;
+}
+
+/* Hover uniforme para todos los botones */
+.hero-actions .btn:hover {
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.25);
+}
+
+/* Animación Hero */
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(var(--space-3));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE AJUSTES */
+@media (max-width: 48em) {
+  .hero-content h1 {
+    font-size: clamp(2.25rem, 6vw + 1.5rem, 4rem);
+  }
+
+  .hero-content p {
+    margin-bottom: var(--space-5);
+  }
+}
+

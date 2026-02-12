@@ -1,36 +1,24 @@
-/* ===================================================
-   ESTILU CASTELLANO – COMPONENTS
-=================================================== */
-
-/* RESET */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* BASE */
-body {
-  color: #2c2c2c;
-  background-color: #f5f1e8;
-}
-
-/* ================= NAVBAR ================= */
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
   position: fixed;
-  inset: 0 0 auto 0;
+  top: 0;
+  width: 100%;
   background: rgba(30, 25, 20, 0.85);
   backdrop-filter: blur(6px);
   z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.navbar.is-scrolled {
+  background: rgba(30, 25, 20, 0.95);
 }
 
 .navbar-container {
   max-width: 75rem;
   margin-inline: auto;
   padding: var(--space-3) var(--space-4);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,90 +44,15 @@ body {
   opacity: 0.7;
 }
 
-/* ================= NAVBAR STATES ================= */
-.navbar {
-  transition: background 0.3s ease;
-}
-
-.navbar.is-scrolled {
-  background: rgba(30, 25, 20, 0.95);
-}
-
-/* ================= HERO LOAD ================= */
-.hero {
-  opacity: 0;
-  transition: opacity 0.6s ease;
-}
-
-.hero.is-loaded {
-  opacity: 1;
-}
-
-
-/* ================= BOTONES ================= */
-.btn {
+.btn-login {
   padding: var(--space-2) var(--space-4);
   border-radius: 999px;
-  font-weight: 600;
-  font-size: var(--fs-sm);
-  text-decoration: none;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-primary {
   background: #c8a46c;
   color: #2c2c2c;
+  font-weight: 600;
 }
 
-.btn-outline {
-  border: 0.125rem solid #f2ede3;
-  color: #f2ede3;
-  background: transparent;
-}
-
-.btn:hover {
-  transform: translateY(-0.125rem);
-  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.25);
-}
-
-/* ================= ANIMACIONES ================= */
-.fade-in {
-  opacity: 0;
-  transform: translateY(var(--space-3));
-  animation: fadeInUp 1.2s ease forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 48em) {
-  .menu {
-    display: none;
-  }
-}
 /* ================= NAV GATED ================= */
-.nav-locked {
-  opacity: 0.85;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25em;
-}
-
-.nav-locked::after {
-  content: "🔒";
-  font-size: 0.85em;
-}
-
-/* =========================
-   NAV — GATED LINK
-========================= */
-
 .menu .is-locked {
   display: inline-flex;
   align-items: center;
@@ -154,4 +67,101 @@ body {
 
 .menu .is-locked span {
   font-size: 0.85em;
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 68rem;
+  padding-inline: var(--space-l);
+  text-align: center;
+  color: #fff;
+  animation: heroFade 1s ease-out both;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  opacity: 0.95;
+}
+
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* BOTONES */
+.btn {
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary {
+  background: #c79a2d;
+  color: #1b1b1b;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ANIMACIONES */
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 48em) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 90vh;
+  }
 }
