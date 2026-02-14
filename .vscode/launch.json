@@ -1,15 +1,23 @@
 {
-    // Use IntelliSense para saber los atributos posibles.
-    // Mantenga el puntero para ver las descripciones de los existentes atributos.
-    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Iniciar Chrome para localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Iniciar Chrome - Web Directa PRO",
+      "url": "http://localhost:5500", // Ajusta según el puerto de Live Server
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true,
+      "userDataDir": "${workspaceFolder}/.vscode/chrome",
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "--disable-extensions",
+        "--incognito",
+        "--disable-infobars"
+      ],
+      "preLaunchTask": "", // Si quieres puedes definir una tarea que compile SCSS/TS antes de launch
+      "postDebugTask": "" // Opcional: limpiar caches o detener servidores
+    }
+  ]
 }
