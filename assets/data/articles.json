@@ -1,0 +1,18 @@
+[
+  {
+    "id": "base-gramatical",
+    "type": "gramatica",
+    "structure": {
+      "isPillar": true,
+      "isGrammarBase": true,
+      "level": "basico",
+      "cluster": "lenguaje-inclusivo",
+      "learningPath": "ruta-basica"
+    },
+    "editorial": {
+      "isFeatured": true,
+      "isRecommended": true,
+      "isUpdated": true
+    }
+  }
+]

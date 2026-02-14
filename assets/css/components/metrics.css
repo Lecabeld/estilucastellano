@@ -1,0 +1,15 @@
+.article-metrics {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.metric-badge {
+  background: #f4f4f4;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
