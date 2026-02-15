@@ -2,10 +2,10 @@
 # SCRIPT ULTRA PRO: Ventana Git Profesional VS Code
 # ==============================
 
-# Ruta de tu proyecto
-\D:\uebs\estilucastellano = "D:\uebs\estilucastellano"
+# Ruta del proyecto
+$projectPath = "D:\uebs\estilucastellano"
 Write-Host "🟢 Navegando a tu proyecto..." -ForegroundColor Green
-Set-Location \D:\uebs\estilucastellano
+Set-Location $projectPath
 
 # Configuración global Git
 Write-Host "🛠 Configurando Git global..." -ForegroundColor Cyan
@@ -33,14 +33,13 @@ Write-Host "✅ Alias listos: s, c, p, pl, l, a"
 
 # Flujo diario rápido
 function git-flow {
-    param([string]\ = "Actualización rápida")
-    Write-Host "
-🔹 Ejecutando flujo Git profesional..." -ForegroundColor Yellow
+    param([string]$msg = "Actualización rápida")
+    Write-Host "`n🔹 Ejecutando flujo Git profesional..." -ForegroundColor Yellow
     git fetch origin
     git pull origin main
     git status
     git add .
-    git commit -m \
+    git commit -m $msg
     git push origin main
     Write-Host "✅ Flujo completado!" -ForegroundColor Green
 }
@@ -52,12 +51,10 @@ Write-Host "📜 Mostrando últimas 5 confirmaciones..."
 git log -5 --oneline --graph --decorate
 
 # Banner inicial
-Write-Host "
-=========================================" -ForegroundColor Magenta
-Write-Host "🚀 Ventana Git Profesional lista para \D:\uebs\estilucastellano" -ForegroundColor Magenta
+Write-Host "`n=========================================" -ForegroundColor Magenta
+Write-Host "🚀 Ventana Git Profesional lista para $projectPath" -ForegroundColor Magenta
 Write-Host "📝 Alias útiles: s, c, p, pl, l, a, gf" -ForegroundColor Magenta
-Write-Host "=========================================
-" -ForegroundColor Magenta
+Write-Host "=========================================`n" -ForegroundColor Magenta
 
 # Mensaje de uso
 Write-Host "🔹 Para usar el flujo diario: gf 'Mensaje de commit'" -ForegroundColor Cyan
