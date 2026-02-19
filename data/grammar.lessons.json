@@ -1,0 +1,14 @@
+{
+  "lessons": [
+    {
+      "id": "l1",
+      "slug": "verbo-intro",
+      "principleId": "p1",
+      "accessLevel": "public",
+      "estimatedTime": 10,
+      "progressTracking": {
+        "minimumScoreToUnlockNext": 0.7
+      }
+    }
+  ]
+}

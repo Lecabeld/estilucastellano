@@ -1,0 +1,15 @@
+{
+  "module": {
+    "id": "grammar_module_v1",
+    "slug": "gramatica",
+    "version": "1.0.0",
+    "accessLevels": ["public", "basic", "premium"]
+  },
+  "analytics": {
+    "trackViews": true,
+    "trackProgress": true,
+    "trackCompletionRate": true,
+    "trackTimeSpent": true,
+    "trackDropOff": true
+  }
+}

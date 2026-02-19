@@ -1,0 +1,6 @@
+{
+  "principles": [
+    { "id": "p1", "slug": "verbo", "order": 1, "levelAccess": "public" },
+    { "id": "p2", "slug": "analogia", "order": 2, "levelAccess": "basic" }
+  ]
+}
