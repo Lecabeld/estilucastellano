@@ -1,45 +1,203 @@
-/* ===================================================
-   ESTILU CASTELLANO – TYPOGRAPHY SYSTEM
-=================================================== */
+/* =========================================================
+   ESTILU DESIGN SYSTEM
+   Typography v1.0 – Production Ready (SaaS Level)
+   ========================================================= */
 
-:root {
-  font-size: 16px;
+/* ==============================
+   1. FONT FACE (Self Hosted)
+   ============================== */
 
-  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-
-  /* Escala tipográfica fluida */
-  --fs-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
-  --fs-md: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
-  --fs-lg: clamp(1.25rem, 1.1rem + 0.8vw, 1.5rem);
-  --fs-xl: clamp(1.75rem, 1.4rem + 1.5vw, 2.25rem);
-  --fs-xxl: clamp(2.25rem, 1.8rem + 2.5vw, 3rem);
+@font-face {
+  font-family: 'Playfair';
+  src: url('/assets/fonts/playfair-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Base tipográfica */
+@font-face {
+  font-family: 'Playfair';
+  src: url('/assets/fonts/playfair-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('/assets/fonts/source-serif-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('/assets/fonts/source-serif-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==============================
+   2. TYPOGRAPHY TOKENS
+   ============================== */
+
+:root {
+  /* Font Families */
+  --font-heading: 'Playfair', serif;
+  --font-body: 'Source Serif 4', serif;
+  --font-ui: 'Inter', sans-serif;
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  /* Fluid Type Scale */
+  --fs-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.85rem);
+  --fs-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
+  --fs-base: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
+  --fs-md: clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+  --fs-lg: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --fs-xl: clamp(2rem, 1.6rem + 1.8vw, 2.75rem);
+  --fs-2xl: clamp(2.75rem, 2rem + 3vw, 3.5rem);
+
+  /* Line Heights */
+  --lh-tight: 1.15;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.75;
+}
+
+/* ==============================
+   3. BASE TYPOGRAPHY
+   ============================== */
+
+html {
+  font-size: 100%;
+}
+
 body {
-  font-family: var(--font-main);
-  font-size: var(--fs-md);
-  line-height: 1.6;
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ==============================
+   4. HEADINGS
+   ============================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
 }
 
 h1 {
-  font-size: var(--fs-xxl);
-  line-height: 1.15;
+  font-size: var(--fs-2xl);
 }
-
 h2 {
   font-size: var(--fs-xl);
-  line-height: 1.2;
 }
-
 h3 {
   font-size: var(--fs-lg);
 }
-
-p {
+h4 {
   font-size: var(--fs-md);
 }
-
-small {
+h5 {
   font-size: var(--fs-sm);
+}
+h6 {
+  font-size: var(--fs-xs);
+}
+
+/* ==============================
+   5. TEXT VARIANTS
+   ============================== */
+
+.text-body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+}
+
+.text-subtitle {
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-tight);
+}
+
+.text-ui {
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  line-height: 1.4;
+}
+
+.text-small {
+  font-size: var(--fs-xs);
+}
+
+.text-large {
+  font-size: var(--fs-lg);
+}
+
+/* ==============================
+   6. TYPOGRAPHY UTILITIES
+   ============================== */
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+.fw-semibold {
+  font-weight: var(--fw-semibold);
+}
+
+.lh-tight {
+  line-height: var(--lh-tight);
+}
+.lh-normal {
+  line-height: var(--lh-normal);
+}
+.lh-relaxed {
+  line-height: var(--lh-relaxed);
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }

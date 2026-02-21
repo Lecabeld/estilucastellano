@@ -8,8 +8,12 @@
   display: grid;
   place-items: center;
   overflow: hidden;
+
+  /* Compensa navbar fijo */
+  padding-top: 80px;
 }
 
+/* Imagen de fondo */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -19,62 +23,62 @@
   z-index: 1;
 }
 
+/* Overlay oscuro */
 .hero::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.45),
-    rgba(0, 0, 0, 0.65)
-  );
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65));
   z-index: 2;
 }
 
-/* ================= HERO-CONTENT PRO ================= */
+/* ================= HERO CONTENT ================= */
+
 .hero-content {
   position: relative;
   z-index: 3;
-  max-width: 68.75rem; /* 1100px */
-  padding-inline: var(--space-4);
+  max-width: 1100px;
+  padding: 0 2rem;
   text-align: center;
   color: #ffffff;
   animation: heroFade 1s ease-out both;
 }
 
-/* H1 gigante fluido */
+/* H1 fluido */
 .hero-content h1 {
-  font-size: clamp(3rem, 5vw + 2rem, 5rem); /* más grande y fluido */
+  font-size: clamp(3rem, 5vw + 2rem, 5rem);
   line-height: 1.1;
   font-weight: 700;
-  margin-bottom: var(--space-5); /* separación con párrafo */
+  margin-bottom: 1.5rem;
 }
 
-/* Párrafo separado y legible */
+/* Párrafo */
 .hero-content p {
-  font-size: var(--fs-lg);
+  font-size: 1.25rem;
   line-height: 1.6;
-  margin-bottom: var(--space-6); /* separación con botones */
+  margin-bottom: 2rem;
   opacity: 0.95;
 }
 
-/* Contenedor de botones con spacing uniforme */
+/* ================= BOTONES ================= */
+
 .hero-actions {
   display: flex;
   justify-content: center;
-  gap: var(--space-4); /* separación horizontal entre botones */
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-/* Botones (ya definidos en components.css, solo reafirmamos) */
 .hero-actions .btn {
-  padding: var(--space-2) var(--space-4);
-  font-size: var(--fs-sm);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
   border-radius: 999px;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .hero-actions .btn-primary {
@@ -83,22 +87,22 @@
 }
 
 .hero-actions .btn-outline {
-  border: 0.125rem solid #f2ede3;
+  border: 2px solid #f2ede3;
   color: #f2ede3;
   background: transparent;
 }
 
-/* Hover uniforme para todos los botones */
 .hero-actions .btn:hover {
-  transform: translateY(-0.125rem);
-  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* Animación Hero */
+/* ================= ANIMACIÓN ================= */
+
 @keyframes heroFade {
   from {
     opacity: 0;
-    transform: translateY(var(--space-3));
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -106,14 +110,10 @@
   }
 }
 
-/* MOBILE AJUSTES */
+/* ================= MOBILE ================= */
+
 @media (max-width: 48em) {
   .hero-content h1 {
     font-size: clamp(2.25rem, 6vw + 1.5rem, 4rem);
   }
-
-  .hero-content p {
-    margin-bottom: var(--space-5);
-  }
 }
-

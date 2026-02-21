@@ -1,88 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Estilu Castellano</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Estilu Castellano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ================= CSS PRO ================= -->
-  <link rel="stylesheet" href="assets/css/spacing.css" />
-  <link rel="stylesheet" href="assets/css/typography.pro.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/sections/hero.css" />
+    <!-- ================= SEO BÁSICO ================= -->
+    <meta
+      name="description"
+      content="Aprende gramática y más con contenido profesional y modular en Estilu Castellano."
+    />
 
-  <!-- ================= HERO IMAGE PRELOAD ================= -->
-  <link
-    rel="preload"
-    as="image"
-    href="assets/images/hero/hero-pergamino-sm.webp"
-    imagesrcset="
-      assets/images/hero/hero-pergamino-sm.webp 640w,
-      assets/images/hero/hero-pergamino-md.webp 1024w,
-      assets/images/hero/hero-pergamino-xl.webp 1920w
-    "
-    imagesizes="100vw"
-  />
-</head>
+    <!-- ================= CSS CORE ================= -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/header/header.css" />
 
-<div class="article-metrics"></div>
+    <!-- ================= HERO IMAGE PRELOAD ================= -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/hero/hero-pergamino-xl.webp"
+      imagesrcset="
+        assets/images/hero/hero-pergamino-sm.webp 640w,
+        assets/images/hero/hero-pergamino-md.webp 1024w,
+        assets/images/hero/hero-pergamino-xl.webp 1920w
+      "
+      imagesizes="100vw"
+    />
 
-<script src="assets/js/metrics/metrics-engine.js"></script>
-<script src="assets/js/metrics/metrics-config.js"></script>
-<script src="assets/js/metrics/metrics-render.js"></script>
+    <!-- ================= SCRIPTS (DEFER) ================= -->
+    <script src="assets/js/metrics/metrics-engine.js" defer></script>
+    <script src="assets/js/metrics/metrics-config.js" defer></script>
+    <script src="assets/js/metrics/metrics-render.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/header/header.js" defer></script>
+  </head>
 
-<script>
-  loadMetrics("base-gramatical", "gramatica");
-</script>
-
-
-<body>
-
-<!-- =========================
-     NAVBAR PRO
-========================= -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <!-- Logo -->
-      <a href="index.html" class="logo">
-        <img src="assets/images/ui/logo-estilu.svg" alt="Estilu Castellano Logo">
-      </a>
-
-      <!-- Menú principal -->
-      <div class="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#blog">Blog</a>
-
-        <!-- Link gated -->
-        <a href="pages/gramatica/index.html" class="is-locked">
-          Gramática <span>🔒</span>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img
+            src="assets/images/ui/logo-estilu.svg"
+            alt="Logo Estilu Castellano"
+            width="140"
+            height="40"
+          />
         </a>
 
-        <!-- Botón contacto -->
-        <a href="#contacto" class="btn-login">Contacto</a>
+        <!-- Menú -->
+        <div class="menu">
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#blog">Blog</a>
+
+          <a href="pages/gramatica/index.html" class="is-locked"> Gramática <span>🔒</span> </a>
+
+          <a href="#contacto" class="btn-login">Contacto</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- =========================
-      HERO SECTION
-  ========================= -->
-  <section class="hero">
-    <img src="assets/images/hero/hero-pergamino-xl.webp" alt="Fondo Hero" class="hero-bg">
-    <div class="hero-content">
-      <h1>Bienvenidu a Estilu Castellano</h1>
-      <p>Aprende gramática y más con nuestro contenido profesional y modular.</p>
-      <div class="hero-actions">
-        <a href="#servicios" class="btn btn-primary">Comenzar</a>
-        <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <picture>
+        <source
+          srcset="
+            assets/images/hero/hero-pergamino-sm.webp  640w,
+            assets/images/hero/hero-pergamino-md.webp 1024w,
+            assets/images/hero/hero-pergamino-xl.webp 1920w
+          "
+          sizes="100vw"
+          type="image/webp"
+        />
+        <img
+          src="assets/images/hero/hero-pergamino-xl.webp"
+          alt="Fondo pergamino decorativo"
+          class="hero-bg"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </picture>
+
+      <div class="hero-content">
+        <h1>Bienvenidu a Estilu Castellano</h1>
+        <p>Aprende gramática y más con contenido profesional, estructurado y modular.</p>
+
+        <div class="hero-actions">
+          <a href="#servicios" class="btn btn-primary">Comenzar</a>
+          <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- ================= MÉTRICAS ================= -->
+    <div class="article-metrics"></div>
 
-
-<script src="assets/js/main.js"></script>
-</body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (typeof loadMetrics === 'function') {
+          loadMetrics('base-gramatical', 'gramatica')
+        }
+      })
+    </script>
+  </body>
 </html>

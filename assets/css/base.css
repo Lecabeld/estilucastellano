@@ -1,0 +1,79 @@
+/* =========================================================
+   ESTILU DESIGN SYSTEM
+   Base v1.0 – Structural Foundation
+   ========================================================= */
+
+/* ==============================
+   1. Box Model
+   ============================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ==============================
+   2. Reset Margins
+   ============================== */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote {
+  margin: 0;
+}
+
+/* ==============================
+   3. Core HTML Defaults
+   ============================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* ==============================
+   4. Media Elements
+   ============================== */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* ==============================
+   5. Forms
+   ============================== */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ==============================
+   6. Lists
+   ============================== */
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
