@@ -1,18 +1,32 @@
-const express = require('express');
-const path = require('path');
+require("dotenv").config();
+const express = require("express");
+const path = require("path");
+const mongoose = require("mongoose");
+const helmet = require("helmet");
+const rateLimit = require("express-rate-limit");
+const compression = require("compression");
+const morgan = require("morgan");
+const cors = require("cors");
+
+const authRoutes = require("./src/routes/auth.routes");
 
 const app = express();
-const getPrinciples = require('./modules/grammar/application/getPrinciples.usecase');
-
 app.use(express.json());
+app.use(cors());
+app.use(helmet());
+app.use(compression());
+app.use(morgan("combined"));
 
-// Servir archivos estáticos desde /public
-app.use(express.static(path.join(__dirname, 'public')));
+const limiter = rateLimit({ windowMs: 15*60*1000, max: 100 });
+app.use(limiter);
 
-app.get('/api/grammar/principles', (req, res) => {
-  res.json(getPrinciples());
-});
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/api/auth", authRoutes);
 
-app.listen(3000, () => {
-  console.log('🚀 Estilu Engine corriendo en http://localhost:3000');
-});
+const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/estilu";
+mongoose.connect(MONGO_URI)
+.then(()=>console.log("MongoDB conectado"))
+.catch(err=>console.error(err));
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, ()=>console.log("Servidor corriendo en http://localhost:"+PORT));
