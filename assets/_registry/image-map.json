@@ -1,1 +1,422 @@
-﻿[]
+﻿[
+    {
+        "id":  "estilu-hero-img-placeholder-desktop-v1",
+        "section":  "hero",
+        "type":  "img",
+        "variant":  "desktop",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/hero/desktop/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-hero-img-placeholder-mobile-v1",
+        "section":  "hero",
+        "type":  "img",
+        "variant":  "mobile",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/hero/mobile/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-hero-img-placeholder-tablet-v1",
+        "section":  "hero",
+        "type":  "img",
+        "variant":  "tablet",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/hero/tablet/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-hero-img-placeholder-retina-v1",
+        "section":  "hero",
+        "type":  "img",
+        "variant":  "retina",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/hero/retina/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-servicios-img-placeholder-desktop-v1",
+        "section":  "servicios",
+        "type":  "img",
+        "variant":  "desktop",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/servicios/desktop/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-servicios-img-placeholder-mobile-v1",
+        "section":  "servicios",
+        "type":  "img",
+        "variant":  "mobile",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/servicios/mobile/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-servicios-img-placeholder-tablet-v1",
+        "section":  "servicios",
+        "type":  "img",
+        "variant":  "tablet",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/servicios/tablet/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-servicios-img-placeholder-retina-v1",
+        "section":  "servicios",
+        "type":  "img",
+        "variant":  "retina",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/servicios/retina/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-gramatica-img-placeholder-desktop-v1",
+        "section":  "gramatica",
+        "type":  "img",
+        "variant":  "desktop",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/gramatica/desktop/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-gramatica-img-placeholder-mobile-v1",
+        "section":  "gramatica",
+        "type":  "img",
+        "variant":  "mobile",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/gramatica/mobile/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-gramatica-img-placeholder-tablet-v1",
+        "section":  "gramatica",
+        "type":  "img",
+        "variant":  "tablet",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/gramatica/tablet/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-gramatica-img-placeholder-retina-v1",
+        "section":  "gramatica",
+        "type":  "img",
+        "variant":  "retina",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/gramatica/retina/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-blog-img-placeholder-desktop-v1",
+        "section":  "blog",
+        "type":  "img",
+        "variant":  "desktop",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/blog/desktop/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-blog-img-placeholder-mobile-v1",
+        "section":  "blog",
+        "type":  "img",
+        "variant":  "mobile",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/blog/mobile/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-blog-img-placeholder-tablet-v1",
+        "section":  "blog",
+        "type":  "img",
+        "variant":  "tablet",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/blog/tablet/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-blog-img-placeholder-retina-v1",
+        "section":  "blog",
+        "type":  "img",
+        "variant":  "retina",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/blog/retina/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-dashboard-img-placeholder-desktop-v1",
+        "section":  "dashboard",
+        "type":  "img",
+        "variant":  "desktop",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/dashboard/desktop/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-dashboard-img-placeholder-mobile-v1",
+        "section":  "dashboard",
+        "type":  "img",
+        "variant":  "mobile",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/dashboard/mobile/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-dashboard-img-placeholder-tablet-v1",
+        "section":  "dashboard",
+        "type":  "img",
+        "variant":  "tablet",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/dashboard/tablet/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-dashboard-img-placeholder-retina-v1",
+        "section":  "dashboard",
+        "type":  "img",
+        "variant":  "retina",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/dashboard/retina/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-landing\\educacion-img-placeholder-desktop-v1",
+        "section":  "landing\\educacion",
+        "type":  "img",
+        "variant":  "desktop",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/landing\\educacion/desktop/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-landing\\educacion-img-placeholder-mobile-v1",
+        "section":  "landing\\educacion",
+        "type":  "img",
+        "variant":  "mobile",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/landing\\educacion/mobile/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-landing\\educacion-img-placeholder-tablet-v1",
+        "section":  "landing\\educacion",
+        "type":  "img",
+        "variant":  "tablet",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/landing\\educacion/tablet/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-landing\\educacion-img-placeholder-retina-v1",
+        "section":  "landing\\educacion",
+        "type":  "img",
+        "variant":  "retina",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/landing\\educacion/retina/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-landing\\inclusivo-img-placeholder-desktop-v1",
+        "section":  "landing\\inclusivo",
+        "type":  "img",
+        "variant":  "desktop",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/landing\\inclusivo/desktop/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-landing\\inclusivo-img-placeholder-mobile-v1",
+        "section":  "landing\\inclusivo",
+        "type":  "img",
+        "variant":  "mobile",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/landing\\inclusivo/mobile/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-landing\\inclusivo-img-placeholder-tablet-v1",
+        "section":  "landing\\inclusivo",
+        "type":  "img",
+        "variant":  "tablet",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/landing\\inclusivo/tablet/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    },
+    {
+        "id":  "estilu-landing\\inclusivo-img-placeholder-retina-v1",
+        "section":  "landing\\inclusivo",
+        "type":  "img",
+        "variant":  "retina",
+        "version":  1,
+        "hash":  "placeholder",
+        "path":  "/assets/img/landing\\inclusivo/retina/placeholder.webp",
+        "originalSize":  0,
+        "optimizedSize":  0,
+        "metrics":  {
+                        "clicks":  0,
+                        "impressions":  0
+                    }
+    }
+]
